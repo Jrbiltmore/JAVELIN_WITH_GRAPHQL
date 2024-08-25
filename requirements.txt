@@ -1,0 +1,13 @@
+requests
+beautifulsoup4
+pyarmor
+pyinstaller
+aiohttp
+tqdm
+scikit-learn
+keras
+PyYAML
+graphene
+flask
+flask-graphql
+flask-cors

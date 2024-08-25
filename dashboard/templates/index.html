@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Injection Tool Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>SQL Injection Tool Dashboard</h1>
+        <form id="crawlForm">
+            <input type="text" name="base_url" placeholder="Enter Base URL" required>
+            <input type="number" name="max_depth" placeholder="Max Depth" value="3">
+            <input type="number" name="max_pages" placeholder="Max Pages" value="100">
+            <button type="submit">Crawl</button>
+        </form>
+        <div id="crawlResults"></div>
+        
+        <form id="sqlInjectionForm">
+            <input type="text" name="url" placeholder="Enter URL to Test for SQL Injection" required>
+            <button type="submit">Test for SQL Injection</button>
+        </form>
+        <div id="sqlInjectionResults"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
